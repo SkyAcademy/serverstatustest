@@ -1,11 +1,12 @@
 <script src="https://mcapi.us/scripts/minecraft.js"></script>
 <style>
-.server-online
+.label
   color: white;
   padding: 8px;
   font-family: Arial;
-  background-color: #4CAF50;
 }
+.online {background-color: #4CAF50;}
+.offline {background-color: #f44336;}
 </style>
     <div class="server-status">
       ConjureCraft is currently <span class="server-online"></span>!
@@ -19,6 +20,6 @@
         }
 
         // you can change these to your own message!
-        document.querySelector('.server-online').innerHTML = status.online ? 'online' : 'offline';
+        document.querySelector('.server-online').innerHTML = status.online ? '<span class="label online">online<span>' : '<span class="label offline">offline<span>';
       });
     </script>
