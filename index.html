@@ -1,9 +1,9 @@
 <script src="https://mcapi.us/scripts/minecraft.js"></script>
     <div class="server-status">
-      My awesome server is currently <span class="server-online"></span>!
+      ConjureCraft is currently <span class="server-online"></span>!
     </div>
     <script>
-      MinecraftAPI.getServerStatus('s.nerd.nu', {
+      MinecraftAPI.getServerStatus('play.conjurecraft.nl', {
         port: 25565 // optional, only if you need a custom port
       }, function (err, status) {
         if (err) {
@@ -11,6 +11,6 @@
         }
 
         // you can change these to your own message!
-        document.querySelector('.server-online').innerHTML = status.online ? 'up' : 'down';
+        document.querySelector('.server-online').innerHTML = status.online ? 'online' : 'offline';
       });
     </script>
