@@ -1,6 +1,13 @@
-<script src="https://mcapi.us/scripts/minecraft.js"></script>
+<style>
+.label {
+  color: white;
+  padding: 8px;
+  font-family: Arial;
+}
+.success {background-color: #4CAF50;}
+</style>
     <div class="server-status">
-      ConjureCraft is currently <span class="server-online"></span>!
+      ConjureCraft is currently <span class="label success"></span>!
     </div>
     <script>
       MinecraftAPI.getServerStatus('play.conjurecraft.nl', {
